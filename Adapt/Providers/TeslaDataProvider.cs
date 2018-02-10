@@ -6,7 +6,7 @@
     /// </summary>
     public class TeslaDataProvider
     {
-        public static string Getir =>
+        public  string Getir =>
                 @"{Data : [{
                     adı : ""Ahmet"",
                     soyadı : ""Falanca"",

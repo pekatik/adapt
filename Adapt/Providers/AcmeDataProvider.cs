@@ -8,24 +8,24 @@ namespace Adapt.Providers
     /// </summary>
     public class AcmeDataProvider
     {
-        public static dynamic BadDataList =>
+        public  dynamic BadDataList =>
 
             new List<object>
             {
                 new
                 {
                     isim = "Ahmet",
-                    Soyisim = "Falanca"
+                    Soyisim = "FENER"
                 },
                 new
                 {
                     isim = "Turhan",
-                    Soyisim = "Filanca"
+                    Soyisim = "GS"
                 },
                 new
                 {
                     isim = "Kayu",
-                    Soyisim = "Fisk"
+                    Soyisim = "BJK"
                 },
             };
 
