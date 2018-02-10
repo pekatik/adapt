@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapt", "Adapt\Adapt.csproj", "{93ECF9E2-08BC-4A0A-860D-B89F4B8C8DF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapt", "Adapt\Adapt.csproj", "{93ECF9E2-08BC-4A0A-860D-B89F4B8C8DF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{82DF0148-8743-4718-8D63-CF2D7217DB30}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

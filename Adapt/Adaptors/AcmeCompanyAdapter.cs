@@ -1,17 +1,22 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Adapt.Providers;
+using  Adapt.Target;
 
 namespace Adapt.Adaptors
 {
     /// <summary>
     /// Adapter for acme company
     /// </summary>
-    public class AcmeCompanyAdapter
+    /// 
+    /// 
+    /// adapter for Acme
+    public class AcmeCompanyAdapter:ICompany
     {
         public List<User> UserList()
         {
-            var data = (List<dynamic>)AcmeDataProvider.BadDataList;
+            AcmeDataProvider acmaDataProvider=new AcmeDataProvider();
+            var data = (List<dynamic>) acmaDataProvider.BadDataList;
             return data.Select(x => new User { Name = x.isim, SurName = x.Soyisim }).ToList();
         }
     }
