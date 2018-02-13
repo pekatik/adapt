@@ -7,9 +7,9 @@ namespace Adapt.Adaptors
     /// <summary>
     /// Adapter for tesla company
     /// </summary>
-    public class TeslaCompanyAdapter
+    public class TeslaCompanyAdapter : Adapter
     {
-        public List<User> UserList()
+        public override List<User> UserList()
         {
             //I guess this coder was blind :D
             var data = TeslaDataProvider.Getir;

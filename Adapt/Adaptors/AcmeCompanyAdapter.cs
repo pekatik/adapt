@@ -7,9 +7,9 @@ namespace Adapt.Adaptors
     /// <summary>
     /// Adapter for acme company
     /// </summary>
-    public class AcmeCompanyAdapter
+    public class AcmeCompanyAdapter : Adapter
     {
-        public List<User> UserList()
+        public override List<User> UserList()
         {
             var data = (List<dynamic>)AcmeDataProvider.BadDataList;
             return data.Select(x => new User { Name = x.isim, SurName = x.Soyisim }).ToList();

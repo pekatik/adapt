@@ -20,16 +20,18 @@ namespace Adapt
             Console.Write("Press any key to acme data. Press 1 for tesla provider data.");
             var selection = Console.ReadLine();
             
+            Adapter adapter = new TeslaCompanyAdapter();
 
             if (selection == "1")
             {
                 Console.WriteLine("tesla provider selected");
-                Console.WriteLine(string.Join(",", new TeslaCompanyAdapter().UserList().Select(x => x.Name)));
+                Console.WriteLine(string.Join(",", adapter.UserList().Select(x => x.Name)));
             }
             else
             {
+                adapter = new AcmeCompanyAdapter();
                 Console.WriteLine("acme provider selected");
-                Console.WriteLine(string.Join(",", new AcmeCompanyAdapter().UserList().Select(x => x.Name)));
+                Console.WriteLine(string.Join(",", adapter.UserList().Select(x => x.Name)));
             }
 
             Console.ReadKey();
